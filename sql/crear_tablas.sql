@@ -1,13 +1,15 @@
 CREATE TABLE dw.dim_cliente (
 	id_cliente SERIAL PRIMARY KEY,
 	nombre TEXT,
-	ciudad TEXT
+	ciudad TEXT,
+	erp_partner_id INTEGER
 );
 
 CREATE TABLE dw.dim_producto (
 	id_producto SERIAL PRIMARY KEY,
 	nombre TEXT,
-	categoria TEXT
+	categoria TEXT,
+	erp_tmpl_id    INTEGER
 );
 
 CREATE TABLE dw.fact_ventas (
